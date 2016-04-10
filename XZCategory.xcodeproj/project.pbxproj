@@ -10,10 +10,11 @@
 		E948A36A1CB8C5430052C9D4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E948A3681CB8C5430052C9D4 /* Main.storyboard */; };
 		E948A36C1CB8C5430052C9D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E948A36B1CB8C5430052C9D4 /* Assets.xcassets */; };
 		E948A36F1CB8C5430052C9D4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E948A36D1CB8C5430052C9D4 /* LaunchScreen.storyboard */; };
-		E948A3791CB8CB0F0052C9D4 /* NSDate+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = E948A3781CB8CB0F0052C9D4 /* NSDate+Category.m */; };
 		E9AB4E4C1CB8DBB60043D7DA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E9AB4E481CB8DBB60043D7DA /* AppDelegate.m */; };
 		E9AB4E4D1CB8DBB60043D7DA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E9AB4E491CB8DBB60043D7DA /* main.m */; };
 		E9AB4E4E1CB8DBB60043D7DA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9AB4E4B1CB8DBB60043D7DA /* ViewController.m */; };
+		E9C04D631CBA5D0F00709861 /* NSDate+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = E9C04D5F1CBA5D0F00709861 /* NSDate+Category.m */; };
+		E9C04D641CBA5D0F00709861 /* NSString+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = E9C04D611CBA5D0F00709861 /* NSString+Category.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,13 +23,16 @@
 		E948A36B1CB8C5430052C9D4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E948A36E1CB8C5430052C9D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E948A3701CB8C5430052C9D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E948A3771CB8CB0F0052C9D4 /* NSDate+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Category.h"; sourceTree = "<group>"; };
-		E948A3781CB8CB0F0052C9D4 /* NSDate+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Category.m"; sourceTree = "<group>"; };
 		E9AB4E471CB8DBB60043D7DA /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E9AB4E481CB8DBB60043D7DA /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		E9AB4E491CB8DBB60043D7DA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E9AB4E4A1CB8DBB60043D7DA /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		E9AB4E4B1CB8DBB60043D7DA /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		E9C04D5E1CBA5D0F00709861 /* NSDate+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Category.h"; sourceTree = "<group>"; };
+		E9C04D5F1CBA5D0F00709861 /* NSDate+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Category.m"; sourceTree = "<group>"; };
+		E9C04D601CBA5D0F00709861 /* NSString+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Category.h"; sourceTree = "<group>"; };
+		E9C04D611CBA5D0F00709861 /* NSString+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Category.m"; sourceTree = "<group>"; };
+		E9C04D621CBA5D0F00709861 /* XZCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZCategory.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,23 +65,14 @@
 		E948A35E1CB8C5420052C9D4 /* XZCategory */ = {
 			isa = PBXGroup;
 			children = (
+				E9C04D5D1CBA5D0F00709861 /* XZCategory */,
 				E9AB4E461CB8DBB60043D7DA /* Demo */,
-				E948A3761CB8CAE60052C9D4 /* Category */,
 				E948A3681CB8C5430052C9D4 /* Main.storyboard */,
 				E948A36B1CB8C5430052C9D4 /* Assets.xcassets */,
 				E948A36D1CB8C5430052C9D4 /* LaunchScreen.storyboard */,
 				E948A3701CB8C5430052C9D4 /* Info.plist */,
 			);
 			path = XZCategory;
-			sourceTree = "<group>";
-		};
-		E948A3761CB8CAE60052C9D4 /* Category */ = {
-			isa = PBXGroup;
-			children = (
-				E948A3771CB8CB0F0052C9D4 /* NSDate+Category.h */,
-				E948A3781CB8CB0F0052C9D4 /* NSDate+Category.m */,
-			);
-			path = Category;
 			sourceTree = "<group>";
 		};
 		E9AB4E461CB8DBB60043D7DA /* Demo */ = {
@@ -90,6 +85,18 @@
 				E9AB4E4B1CB8DBB60043D7DA /* ViewController.m */,
 			);
 			path = Demo;
+			sourceTree = "<group>";
+		};
+		E9C04D5D1CBA5D0F00709861 /* XZCategory */ = {
+			isa = PBXGroup;
+			children = (
+				E9C04D621CBA5D0F00709861 /* XZCategory.h */,
+				E9C04D5E1CBA5D0F00709861 /* NSDate+Category.h */,
+				E9C04D5F1CBA5D0F00709861 /* NSDate+Category.m */,
+				E9C04D601CBA5D0F00709861 /* NSString+Category.h */,
+				E9C04D611CBA5D0F00709861 /* NSString+Category.m */,
+			);
+			path = XZCategory;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -162,10 +169,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9C04D631CBA5D0F00709861 /* NSDate+Category.m in Sources */,
 				E9AB4E4C1CB8DBB60043D7DA /* AppDelegate.m in Sources */,
 				E9AB4E4D1CB8DBB60043D7DA /* main.m in Sources */,
+				E9C04D641CBA5D0F00709861 /* NSString+Category.m in Sources */,
 				E9AB4E4E1CB8DBB60043D7DA /* ViewController.m in Sources */,
-				E948A3791CB8CB0F0052C9D4 /* NSDate+Category.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
