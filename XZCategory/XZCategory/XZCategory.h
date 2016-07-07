@@ -11,5 +11,6 @@
 
 #import "NSDate+Category.h"
 #import "NSString+Category.h"
+#import "NSMutableAttributedString+Category.h"
 
 #endif /* XZCategory_h */
