@@ -10,7 +10,7 @@
 #import "XZCategory.h"
 
 
-@interface ViewController ()
+@interface ViewController ()<UITextViewDelegate>
 @property (weak, nonatomic) IBOutlet UITextView *textView;
 
 @end
@@ -20,8 +20,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    NSString *string = [NSString stringFromFloat:4.34253 format:@"%.3f"];
-    NSLog(@"%@",string.md5.uppercaseString);
+    self.textView.delegate = self;
     
     // Do any additional setup after loading the view, typically from a nib.
 }
@@ -34,5 +33,25 @@
     
     NSLog(@"%@",self.textView.text);
 }
+
+
+- (void)textViewDidChange:(UITextView *)textView{
+
+    NSLog(@"%@",textView.text);
+    
+    textView.text = [self disable_emoji:textView.text];
+    
+    NSLog(@"%@",textView.text);
+}
+
+- (void)textViewDidEndEditing:(UITextView *)textView{
+    
+
+}
+
+/**
+ *  将text中的emoji表情替换为""
+ */
+
 
 @end
