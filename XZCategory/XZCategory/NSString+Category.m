@@ -11,7 +11,7 @@
 
 @implementation NSString (Category)
 
-- (NSString *)md5{
+- (NSString *)MD5{
     
     const char *cStr = [self UTF8String];
     unsigned char result[CC_MD5_DIGEST_LENGTH];
@@ -119,5 +119,10 @@
                                                                  range:NSMakeRange(0, [self length])
                                                           withTemplate:@""];
     return newString;
+}
+
+- (BOOL)isLegalPhoneNumber{
+
+    
 }
 @end

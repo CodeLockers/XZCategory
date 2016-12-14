@@ -11,138 +11,138 @@
 
 @interface NSMutableAttributedString (Category)
 /**
- *  设置Range内字体的颜色
+ *  set text color
  *
- *  @param color 字体颜色
- *  @param range 范围
+ *  @param color
+ *  @param range
  */
 - (NSMutableAttributedString *)setTextWithColor:(UIColor *)color inRange:(NSRange)range;
 /**
- *  设置Range内字体的大小
+ *  set text font
  *
- *  @param font 字体大小
- *  @param range 范围
+ *  @param font
+ *  @param range
  */
 - (NSMutableAttributedString *)setTextWithFont:(UIFont *)font inRange:(NSRange)range;
 
 /**
- *  设置Range内字体的背景色
+ *  set text backgroundcolor
  *
- *  @param color 背景色
- *  @param range 范围
+ *  @param color
+ *  @param range
  */
 - (NSMutableAttributedString *)setTextWithBackgroundColor:(UIColor *)color inRange:(NSRange)range;
 
 /**
- *  设置Range内字体中空
+ *  set text stroke color
  *
- *  @param color 线条颜色
- *  @param width 线条宽度
- *  @param range 范围
+ *  @param color
+ *  @param width
+ *  @param range
  */
 - (NSMutableAttributedString *)setTextWithStrokeColor:(UIColor *)color strokeWidth:(CGFloat)width inRange:(NSRange)range;
 
 /**
- *  设置Range内字体阴影
+ *  set text shadow
  *
- *  @param shadow 阴影
- *  @param range 范围
+ *  @param shadow
+ *  @param range
  */
 - (NSMutableAttributedString *)setTextWithShadow:(NSShadow *)shadow inRange:(NSRange)range;
 
 /**
- *  设置Range内字体删除线
+ *  set text delete line
  *
- *  @param deleteLineStyle 删除线样式
- *  @param color           删除线颜色
- *  @param range           范围
+ *  @param deleteLineStyle
+ *  @param color
+ *  @param range
  */
 - (NSMutableAttributedString *)setTextWithDeleteLine:(NSUnderlineStyle)lineStyle color:(UIColor *)color inRange:(NSRange)range;
 
 /**
- *  设置Range内字体下滑线
+ *  set text under line
  *
- *  @param deleteLineStyle 下滑线样式
- *  @param color           下滑线颜色
- *  @param range           范围
+ *  @param deleteLineStyle
+ *  @param color
+ *  @param range
  */
 - (NSMutableAttributedString *)setTextWithUnderLine:(NSUnderlineStyle)lineStyle color:(UIColor *)color inRange:(NSRange)range;
 
 /**
- *  设置字符之间间距
+ *  set text kern
  *
- *  @param kern  间距
- *  @param range 范围
+ *  @param kern
+ *  @param range
  */
 - (NSMutableAttributedString *)setTextWithKern:(CGFloat)kern inRange:(NSRange)range;
 
 /**
- *  设置Range的段落
+ *  set text paragraphStyle
  *
- *  @param paragraphStyle 段落
- *  @param range          范围
+ *  @param paragraphStyle
+ *  @param range
  */
 - (NSMutableAttributedString *)setTextWithParagraphStyle:(NSParagraphStyle *)paragraphStyle inRange:(NSRange)range;
 
 /**
- *  设置Range内文字效果
+ *  set text effect
  *
- *  @param effect 效果
- *  @param range  范围
+ *  @param effect
+ *  @param range
  */
 - (NSMutableAttributedString *)setTextWithEffect:(NSString *)effect inRange:(NSRange)range;
 
 /**
- *  设置字符连体
+ *  set text ligature
  *
- *  @param isLigature 是否连体
- *  @param range      范围
+ *  @param isLigature
+ *  @param range
  */
 - (NSMutableAttributedString *)setTextWithLigature:(BOOL)isLigature inRange:(NSRange)range;
 
 /**
- *  设置倾斜度
+ *  set text obliqueness
  *
- *  @param obliqueness 倾斜度
- *  @param range       范围
+ *  @param obliqueness
+ *  @param range
  */
 - (NSMutableAttributedString *)setTextWithObliqueness:(CGFloat)obliqueness inRange:(NSRange)range;
 
 /**
- *  设置基线便宜
+ *  set text baseline offset
  *
- *  @param offset 偏移量
- *  @param range  范围
+ *  @param offset
+ *  @param range
  */
 - (NSMutableAttributedString *)setTextWithBaseLineOffset:(CGFloat)offset inRange:(NSRange)range;
 
 /**
- *  设置压缩
+ *  set text expansion
  *
- *  @param expansion 压缩量
- *  @param range     范围
+ *  @param expansion
+ *  @param range
  */
 - (NSMutableAttributedString *)setTextWithExpansion:(CGFloat)expansion inRange:(NSRange)range;
 
 /**
- *  设置链接
+ *  set text link
  *
- *  @param range 范围
+ *  @param range
  */
 - (NSMutableAttributedString *)setTextWithURL:(NSURL *)url inRange:(NSRange)range;
 /**
- *  设置图片
+ *  set text image
  *
- *  @param attachment 图片
- *  @param range      范围
+ *  @param attachment
+ *  @param range
  */
 - (NSMutableAttributedString *)setTextWithAttacment:(NSTextAttachment *)attachment inRange:(NSRange)range;
 
 /**
- *  设置属性
+ *  set text attribute
  *
- *  @param dic   属性字典
- *  @param range 范围
+ *  @param dic
+ *  @param range
  */
 - (NSMutableAttributedString *)setTextWithAttributes:(NSDictionary *)dic inRange:(NSRange)range;
 

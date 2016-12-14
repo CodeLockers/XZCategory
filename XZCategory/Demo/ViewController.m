@@ -31,23 +31,10 @@
 }
 - (IBAction)button_Pressed:(id)sender {
     
-    NSLog(@"%@",self.textView.text);
 }
 
 
-- (void)textViewDidChange:(UITextView *)textView{
 
-    NSLog(@"%@",textView.text);
-    
-    textView.text = [self disable_emoji:textView.text];
-    
-    NSLog(@"%@",textView.text);
-}
-
-- (void)textViewDidEndEditing:(UITextView *)textView{
-    
-
-}
 
 /**
  *  将text中的emoji表情替换为""

@@ -16,16 +16,28 @@
 *
 *  @return the string's md5 string
 */
-- (NSString *)md5;
+- (NSString *)MD5;
 
-/** change string to json string*/
-@property (nonatomic, readonly, strong) NSString *jsonString;
+/**
+ *  transform string to json string
+ *
+ *  @return json string
+ */
+- (NSString *)jsonString;
 
-/** Whether it is pure int numbers*/
-@property (nonatomic, readonly, assign) BOOL isPureInt;
-/** Whether it is float numbers*/
-@property (nonatomic, readonly, assign) BOOL isFloatNumber;
+/**
+ *  adjust if the string is a int number
+ *
+ *  @return YES/NO
+ */
+- (BOOL)isPureInt;
 
+/**
+ *  adjust if the string is a float number
+ *
+ *  @return YES/NO
+ */
+- (BOOL)isFloatNumber;
 
 /**
  *  int->string
@@ -59,4 +71,11 @@
  *  @return the string without emoji
  */
 - (NSString *)removeEmoji;
+
+/**
+ *  adjust the string is a legal phone number
+ *
+ *  @return YES/NO
+ */
+- (BOOL)isLegalPhoneNumber;
 @end
